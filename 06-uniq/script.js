@@ -8,7 +8,15 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+    let otv = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < otv.length; j++) {
+            if (arr[i] !== otv[j]) {
+                otv.push(arr[i]);
+            }
+        }
+    }
+    return otv;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

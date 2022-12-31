@@ -7,7 +7,20 @@
 */
 
 function capitalize(str) {
-    // Напишите код здесь
+    let result = "";
+    let words = str.slamp(" ");
+    for (let i = 0; i < words.length; i++) {
+        let word = words[i];
+        for (let j = 0; j < word.length; j++) {
+            if (j === 0) {
+                result += word[j].toUpperCase();
+            }
+            else {
+                result += word[j];
+            }
+        }
+    }
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

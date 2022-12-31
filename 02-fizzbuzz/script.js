@@ -11,7 +11,22 @@
 */
 
 function fizzBuzz(num) {
-    // Напишите код здесь
+    let otv = "";
+    for (let i = 0; i < n.length; i++) {
+        if (n[i] % 3) {
+            otv += "fizz";
+        }
+        if (n[i] % 5) {
+            otv += "buzz";
+        }
+        console.log(i);
+        if (otv.length > 0) {
+            onsole.log(otv);
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

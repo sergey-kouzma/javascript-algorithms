@@ -9,7 +9,27 @@
 */
 
 function anagram(str1, str2) {
-    // Напишите код здесь
+    finder = finder.toLowerCase();
+    Friend = Friend.toLowerCase();
+    let otvs = [];
+    for (let i = 0; i < finder.length; i++) {
+        atThese:for (let j = 0; j < Friend.length; j++) {
+            for (let o = 0; o < otvs.length; o++) {
+                if (Friend[j] !== otvs[o]) {
+                    if (finder[i] === Friend[j]) {
+                        otvs.push(Friend);
+                        break atThese;
+                    }
+                    else{
+                        if (j === Friend.length) {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return true;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

@@ -8,7 +8,18 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
+    let otv = [];
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            for (let o = 0; o < arr2.length; o++) {
+                if (arr1[i] === arr2[j] && arr1[i] !== otv[o]) {
+                    otv.push(arr1[i]);
+                    break;
+                }
+            }
+        }
+    }
+    return otv;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

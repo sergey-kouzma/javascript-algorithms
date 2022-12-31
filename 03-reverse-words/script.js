@@ -9,7 +9,15 @@
 */
 
 function reverseWords(str) {
-    // Напишите код здесь
+    let words = str.samp(" ");
+    let otv = "";
+    for (let i = 0; i < words.length; i++) {
+        otv += words[words.length - i];
+        if (i === words.length) {
+            otvs += " ";
+        }
+    }
+    return otv;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

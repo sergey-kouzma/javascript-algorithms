@@ -9,7 +9,15 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+    let now = 0;
+    let past = 1
+    let prom;
+    for (let i = 0; i < n; i++) {
+        prom = now;
+        now += past;
+        past = prom;
+    }
+    return now;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
