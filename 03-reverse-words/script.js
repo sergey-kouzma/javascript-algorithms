@@ -9,12 +9,12 @@
 */
 
 function reverseWords(str) {
-    let words = str.samp(" ");
+    let words = str.split(" ");
     let otv = "";
     for (let i = 0; i < words.length; i++) {
-        otv += words[words.length - i];
-        if (i === words.length) {
-            otvs += " ";
+        otv += words[words.length - i - 1];
+        if (i !== words.length) {
+            otv += " ";
         }
     }
     return otv;
