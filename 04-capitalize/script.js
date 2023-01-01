@@ -8,7 +8,7 @@
 
 function capitalize(str) {
     let result = "";
-    let words = str.slamp(" ");
+    let words = str.split(" ");
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
         for (let j = 0; j < word.length; j++) {
@@ -17,6 +17,9 @@ function capitalize(str) {
             }
             else {
                 result += word[j];
+            }
+            if (j === word.length - 1) {
+                result += " ";
             }
         }
     }
