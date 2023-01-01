@@ -10,18 +10,17 @@
 */
 
 function findVowels(str) {
-    function finedVowels(str) {
-        const vowels = ["а", "я", "о", "ё", "у", "ю", "ы", "и", "э", "е"];
-        let otv = 0;
-        str.forEach(el => {
-            vowels.forEach(elem => {
-                if (el = elem) {
-                    otv ++;
-                }
-            });
-        });
-        return otv;
-    }
+    const vowels = ["а", "я", "о", "ё", "у", "ю", "ы", "и", "э", "е"];
+    let otv = 0;
+    for(i = 0; i < str.length; i++) {
+        for(j = 0; j < vowels.length; j++) {
+            if (str[i] === vowels[j]) {
+                otv ++;
+                break;
+            }
+        };
+    };
+    return otv;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
