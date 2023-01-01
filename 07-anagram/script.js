@@ -9,27 +9,10 @@
 */
 
 function anagram(str1, str2) {
-    str1 = str1.toLowerCase();
-    str2 = str2.toLowerCase();
-    let otvs = [];
-    for (let i = 0; i < str1.length; i++) {
-        atThese:for (let j = 0; j < str2.length; j++) {
-            for (let o = 0; o < otvs.length; o++) {
-                if (j !== otvs[o]) {
-                    if (str1[i] === str2[j]) {
-                        otvs.push(j);
-                        break atThese;
-                    }
-                    else{
-                        if (j === str2.length) {
-                            return false;
-                        }
-                    }
-                }
-            }
-        }
+    if (str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('')) {
+        return true;
     }
-    return true;
+    return false;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
