@@ -9,8 +9,8 @@
 function countZeros(n) {
     let otv = 0;
     let str;
-    for (let i = 1; i <= n.length; i++) {
-        str = String(n[i]);
+    for (let j = 1; j <= n; j++) {
+        str = String(j)
         for (let i = 0; i < str.length; i++) {
             if (str[i] === "0") {
                 otv ++;
