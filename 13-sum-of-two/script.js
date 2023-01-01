@@ -9,9 +9,9 @@
 */
 
 function sumOfTwo(arr, sum) {
-    for (let i = 0; i < a.length; i++) {
-        for (let j = 0; j < a.length; j++) {
-            if (i !== j && a[i] + a[j] === b) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (i !== j && arr[i] + arr[j] === sum) {
                 return true;
             }
         }
