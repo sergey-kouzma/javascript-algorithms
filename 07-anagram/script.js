@@ -9,19 +9,19 @@
 */
 
 function anagram(str1, str2) {
-    finder = finder.toLowerCase();
-    Friend = Friend.toLowerCase();
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
     let otvs = [];
-    for (let i = 0; i < finder.length; i++) {
-        atThese:for (let j = 0; j < Friend.length; j++) {
+    for (let i = 0; i < str1.length; i++) {
+        atThese:for (let j = 0; j < str2.length; j++) {
             for (let o = 0; o < otvs.length; o++) {
-                if (Friend[j] !== otvs[o]) {
-                    if (finder[i] === Friend[j]) {
-                        otvs.push(Friend);
+                if (j !== otvs[o]) {
+                    if (str1[i] === str2[j]) {
+                        otvs.push(j);
                         break atThese;
                     }
                     else{
-                        if (j === Friend.length) {
+                        if (j === str2.length) {
                             return false;
                         }
                     }

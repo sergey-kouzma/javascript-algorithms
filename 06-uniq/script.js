@@ -13,7 +13,9 @@ function uniq(arr) {
         for (let j = 0; j < otv.length; j++) {
             if (arr[i] !== otv[j]) {
                 otv.push(arr[i]);
+                break;
             }
+            console.log(otv);
         }
     }
     return otv;

@@ -12,7 +12,7 @@ function fibonacci(n) {
     let now = 0;
     let past = 1
     let prom;
-    for (let i = 0; i < n; i++) {
+    for (let i = 1; i < n; i++) {
         prom = now;
         now += past;
         past = prom;
