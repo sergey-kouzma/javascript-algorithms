@@ -19,7 +19,7 @@ function palindrome(str) {
             return false;
         }    
     }
-    return true;
+    return true; 
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
