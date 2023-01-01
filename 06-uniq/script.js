@@ -9,13 +9,22 @@
 
 function uniq(arr) {
     let otv = [];
+    let proverka = true;
     for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < otv.length; j++) {
-            if (arr[i] !== otv[j]) {
-                otv.push(arr[i]);
-                break;
+        if (otv .length > 0) {
+            for (let j = 0; j < otv.length; j++) {
+                if (arr[i] === otv[j]) {
+                    proverka = false;
+                    break;
+                }
             }
-            console.log(otv);
+            if (proverka) {
+                otv.push(arr[i]);
+            }
+            proverka = true;
+        }
+        else {
+            otv.push(arr[i]);
         }
     }
     return otv;
