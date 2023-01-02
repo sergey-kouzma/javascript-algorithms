@@ -9,7 +9,7 @@
 */
 
 function anagram(str1, str2) {
-    if (str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('')) {
+    if (str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('') && str1.toLowerCase() != str2.toLowerCase()) {
         return true;
     }
     return false;
@@ -18,4 +18,4 @@ function anagram(str1, str2) {
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(anagram('finder', 'Friend')); // true
-console.log(anagram('hello', 'bye')); // false
+console.log(anagram('bye', 'bye')); // false

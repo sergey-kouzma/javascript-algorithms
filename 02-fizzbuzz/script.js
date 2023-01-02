@@ -32,4 +32,4 @@ function fizzBuzz(num) {
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(fizzBuzz(15));
+console.log(fizzBuzz(1));
