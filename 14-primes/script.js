@@ -7,17 +7,17 @@
 */
 
 function primes(num) {
-    let otv = [2];
+    let result = [2];
     for (let i = 1; i <= num; i++) {
         for (let j = 2; j < i; j++) {
             if (i % j === 0) {
                 break;
             }
-            otv.push(i);
+            result.push(i);
             break;
         }            
     }
-    return otv;
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

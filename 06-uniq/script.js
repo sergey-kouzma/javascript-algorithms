@@ -8,26 +8,26 @@
 */
 
 function uniq(arr) {
-    let otv = [];
-    let proverka = true;
+    let result = [];
+    let chek = true;
     for (let i = 0; i < arr.length; i++) {
-        if (otv .length > 0) {
-            for (let j = 0; j < otv.length; j++) {
-                if (arr[i] === otv[j]) {
-                    proverka = false;
+        if (result .length > 0) {
+            for (let j = 0; j < result.length; j++) {
+                if (arr[i] === result[j]) {
+                    chek = false;
                     break;
                 }
             }
-            if (proverka) {
-                otv.push(arr[i]);
+            if (chek) {
+                result.push(arr[i]);
             }
-            proverka = true;
+            chek = true;
         }
         else {
-            otv.push(arr[i]);
+            result.push(arr[i]);
         }
     }
-    return otv;
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

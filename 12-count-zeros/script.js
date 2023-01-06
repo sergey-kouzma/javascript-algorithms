@@ -7,17 +7,17 @@
 */
 
 function countZeros(n) {
-    let otv = 0;
+    let result = 0;
     let str;
     for (let j = 1; j <= n; j++) {
         str = String(j)
         for (let i = 0; i < str.length; i++) {
             if (str[i] === "0") {
-                otv ++;
+                result ++;
             }
         }
     }
-    return otv;
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

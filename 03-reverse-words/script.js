@@ -10,14 +10,14 @@
 
 function reverseWords(str) {
     let words = str.split(" ");
-    let otv = "";
+    let result = "";
     for (let i = 0; i < words.length; i++) {
-        otv += words[words.length - i - 1];
-        if (i !== words.length) {
-            otv += " ";
+        result += words[words.length - i - 1];
+        if (i !== words.length - 1) {
+            result += " ";
         }
     }
-    return otv;
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

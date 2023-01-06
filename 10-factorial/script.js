@@ -8,11 +8,11 @@
 */
 
 function factorial(n) {
-    let otv = 1;
+    let result = 1;
     for (let i = 1; i <= n; i++) {
-        otv *= i;
+        result *= i;
     }
-    return otv;
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
